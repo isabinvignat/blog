@@ -27,3 +27,7 @@ VALUES ('3', 'Carlos', '2022-03-28' , 'Clases', 'Ayudantias');
 
 ALTER TABLE posts
 ADD titulo VARCHAR(255)
+
+UPDATE posts
+SET titulo = 'Jornada Diurna'
+WHERE id = '1';

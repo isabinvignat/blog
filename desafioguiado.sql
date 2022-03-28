@@ -24,3 +24,6 @@ INSERT INTO posts
 (id, nombre_usuario, fecha_de_creacion, contenido, descripcion)
 -- Con la instrucción VALUES logramos asociada cada columna con un valor específico
 VALUES ('3', 'Carlos', '2022-03-28' , 'Clases', 'Ayudantias');
+
+ALTER TABLE posts
+ADD titulo VARCHAR(255)

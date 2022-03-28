@@ -31,3 +31,25 @@ ADD titulo VARCHAR(255)
 UPDATE posts
 SET titulo = 'Jornada Diurna'
 WHERE id = '1';
+
+UPDATE posts
+SET titulo = 'Jornada Diurna'
+WHERE id = '2';
+
+UPDATE posts
+SET titulo = 'Jornada Diurna y Vespertina'
+WHERE id = '3';
+
+-- Definimos qué tabla vamos a insertar datos
+INSERT INTO posts
+-- Explicitamos cuáles son las columnas a insertar
+(id, nombre_usuario, fecha_de_creacion, contenido, descripcion, titulo)
+-- Con la instrucción VALUES logramos asociada cada columna con un valor específico
+VALUES ('4', 'Pedro', '2022-03-28' , 'Clases', 'Notas','jornada diurna');
+
+-- Definimos qué tabla vamos a insertar datos
+INSERT INTO posts
+-- Explicitamos cuáles son las columnas a insertar
+(id, nombre_usuario, fecha_de_creacion, contenido, descripcion, titulo)
+-- Con la instrucción VALUES logramos asociada cada columna con un valor específico
+VALUES ('5', 'Pedro', '2022-03-28' , 'Clases', 'Notas', 'jornada vespertina');

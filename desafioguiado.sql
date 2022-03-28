@@ -53,3 +53,5 @@ INSERT INTO posts
 (id, nombre_usuario, fecha_de_creacion, contenido, descripcion, titulo)
 -- Con la instrucción VALUES logramos asociada cada columna con un valor específico
 VALUES ('5', 'Pedro', '2022-03-28' , 'Clases', 'Notas', 'jornada vespertina');
+
+DELETE FROM posts WHERE nombre_usuario='Carlos';

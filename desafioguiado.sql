@@ -54,4 +54,25 @@ INSERT INTO posts
 -- Con la instrucción VALUES logramos asociada cada columna con un valor específico
 VALUES ('5', 'Pedro', '2022-03-28' , 'Clases', 'Notas', 'jornada vespertina');
 
-DELETE FROM posts WHERE nombre_usuario='Carlos';
+ DELETE FROM posts WHERE nombre_usuario='Carlos';
+
+-- Definimos qué tabla vamos a insertar datos
+INSERT INTO posts
+-- Explicitamos cuáles son las columnas a insertar
+(id, nombre_usuario, fecha_de_creacion, contenido, descripcion, titulo)
+-- Con la instrucción VALUES logramos asociada cada columna con un valor específico
+VALUES ('6', 'Carlos', '2022-03-28' , 'Clases', 'Trabajos', 'jornada diurna');
+
+--Parte 2
+-- Creamos una tabla con el nombre comentarios
+CREATE TABLE comentarios(
+-- Definimos el campo id con el tipo de dato cadena con un largo de 25 caracteres
+id VARCHAR(25),
+-- Definimos el campo fecha
+fecha DATE,
+-- Definimos el campo hora_de_creacion
+hora_de_creacion TIME,
+-- Definimos el campo contenido
+contenido VARCHAR(255),
+-- Vinculamos una clave foránea entre nuestra columna id y su símil en la tabla posts
+FOREIGN KEY (id) REFERENCES posts(id));

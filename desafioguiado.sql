@@ -76,3 +76,36 @@ hora_de_creacion TIME,
 contenido VARCHAR(255),
 -- Vinculamos una clave foránea entre nuestra columna id y su símil en la tabla posts
 FOREIGN KEY (id) REFERENCES posts(id));
+
+-- Definimos qué tabla vamos a insertar datos
+INSERT INTO comentarios
+-- Explicitamos cuáles son las columnas a insertar
+(id, fecha, hora_de_creacion, contenido)
+-- Con la instrucción VALUES logramos asociada cada columna con un valor específico
+VALUES ('1', '2022-03-28', '18:30:05', 'Diurna');
+
+-- Definimos qué tabla vamos a insertar datos
+INSERT INTO comentarios
+-- Explicitamos cuáles son las columnas a insertar
+(id, fecha, hora_de_creacion, contenido)
+-- Con la instrucción VALUES logramos asociada cada columna con un valor específico
+VALUES ('2', '2022-03-28', '19:05:32', 'Diurna');
+
+-- Definimos qué tabla vamos a insertar datos
+INSERT INTO comentarios
+-- Explicitamos cuáles son las columnas a insertar
+(id, fecha, hora_de_creacion, contenido)
+-- Con la instrucción VALUES logramos asociada cada columna con un valor específico
+VALUES ('6', '2022-03-28', '18:45:03', 'Trabajos grupales');
+
+-- Definimos qué tabla vamos a insertar datos
+INSERT INTO comentarios
+-- Explicitamos cuáles son las columnas a insertar
+(id, fecha, hora_de_creacion, contenido)
+-- Con la instrucción VALUES logramos asociada cada columna con un valor específico
+VALUES ('6', '2022-03-28', '19:20:03', 'individuales');
+
+
+
+
+

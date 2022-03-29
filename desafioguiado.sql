@@ -105,7 +105,28 @@ INSERT INTO comentarios
 -- Con la instrucción VALUES logramos asociada cada columna con un valor específico
 VALUES ('6', '2022-03-28', '19:20:03', 'individuales');
 
+-- Definimos qué tabla vamos a insertar datos
+INSERT INTO posts
+-- Explicitamos cuáles son las columnas a insertar
+(id, nombre_usuario, fecha_de_creacion, contenido, descripcion, titulo)
+-- Con la instrucción VALUES logramos asociada cada columna con un valor específico
+VALUES ('7', 'Margarita', '2022-03-28' , 'Clases', 'Notas', 'Fechas exámenes');
 
+-- Definimos qué tabla vamos a insertar datos
+INSERT INTO comentarios
+-- Explicitamos cuáles son las columnas a insertar
+(id, fecha, hora_de_creacion, contenido)
+-- Con la instrucción VALUES logramos asociada cada columna con un valor específico
+VALUES ('7', '2022-03-28', '20:45:33', 'notas presentacion examen');
 
+INSERT INTO comentarios
+(id, fecha, hora_de_creacion, contenido)
+VALUES ('7', '2022-03-28', '20:55:05', 'notas examen');
 
+INSERT INTO comentarios
+(id, fecha, hora_de_creacion, contenido)
+VALUES ('7', '2022-03-28', '20:45:33', 'examen repeticion');
 
+INSERT INTO comentarios
+(id, fecha, hora_de_creacion, contenido)
+VALUES ('7', '2022-03-28', '21:10:00', 'notas finales');

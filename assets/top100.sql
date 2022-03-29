@@ -28,3 +28,16 @@ ALTER TABLE IF EXISTS public.reparto
 \copy peliculas FROM 'C:\Users\ibinv\OneDrive\Desktop\Apoyodesafiotop100\peliculas.csv' csv header;
 COPY
 \copy reparto FROM 'C:\Users\ibinv\OneDrive\Desktop\Apoyodesafiotop100\reparto.csv' csv;
+
+--3. Obtener id de 'Titanic'
+SELECT id_pelicula FROM peliculas
+peliculas_db-# WHERE pelicula='Titanic';
+
+--4. Lista de actores de 'Titanic'
+SELECT FROM reparto where id_reparto='2';
+
+--5. Peliculas de Harrison Ford
+SELECT count (id_reparto) FROM reparto WHERE nombre_actor='Harrison Ford';
+
+--6.Peliculas estrenadas entre 1990 y 1999
+SELECT * FROM peliculas WHERE estreno BETWEEN 1990 and 1999 ORDER BY peliculas ASC,

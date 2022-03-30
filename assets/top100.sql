@@ -51,4 +51,4 @@ SELECT * FROM peliculas WHERE estreno BETWEEN 1990 and 1999 ORDER BY peliculas A
 SELECT pelicula, LENGTH(pelicula) AS longitud_titulo FROM peliculas GROUP BY pelicula;
 
 --8.Longitud más grande
-# SELECT MAX(LENGTH(pelicula)) FROM peliculas;
+SELECT MAX(LENGTH(pelicula)) FROM peliculas;

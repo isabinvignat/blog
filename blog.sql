@@ -25,13 +25,9 @@ FROM usuarios
 LEFT JOIN post ON usuario.id =post.usuario_id
 WHERE post.id IS NULL;
 --Requerimiento 7
--- SELECT *
--- FROM post
--- FULL OUTER JOIN comentario ON post.id =comentario.post_id ORDER BY comentario.post_id DESC;
-
--- SELECT post.título, comentarios.texto
--- FROM post
--- FULL OUTER JOIN comentarios ON post.id = comentarios.post_id;
+SELECT post.título, comentarios.texto
+FROM post
+FULL OUTER JOIN comentarios ON post.id = comentarios.post_id;
 --Requerimiento 8
 SELECT DISTINCT*
 FROM usuarios

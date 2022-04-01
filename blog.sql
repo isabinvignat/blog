@@ -8,3 +8,11 @@ CREATE TABLE comentarios(id SERIAL PRIMARY KEY, usuario_id INT NOT NULL REFERENC
 \copy usuarios FROM 'C:\Users\ibinv\OneDrive\Desktop\blog\usuarios.csv' csv header;
 \copy post FROM 'C:\Users\ibinv\OneDrive\Desktop\blog\post.csv' csv header;
 \copy comentarios FROM 'C:\Users\ibinv\OneDrive\Desktop\blog\comentarios.csv' csv header;
+--Requerimiento 4
+SELECT usuarios.email, usuarios.id, post.título
+FROM usuarios
+JOIN post ON usuarios.id = post.usuario_id
+WHERE usuarios.id = '5';
+
+--Requerimiento 5
+

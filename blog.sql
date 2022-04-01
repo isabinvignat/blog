@@ -15,4 +15,25 @@ JOIN post ON usuarios.id = post.usuario_id
 WHERE usuarios.id = '5';
 
 --Requerimiento 5
+SELECT  usuarios.id, usuarios.email, comentarios.texto
+FROM usuarios 
+JOIN comentarios ON usuarios.id = comentarios.usuario_id
+WHERE usuarios.id<>'6';
+--Requerimiento 6
+SELECT usuarios.*
+FROM usuarios
+LEFT JOIN post ON usuario.id =post.usuario_id
+WHERE post.id IS NULL;
+--Requerimiento 7
+-- SELECT *
+-- FROM post
+-- FULL OUTER JOIN comentario ON post.id =comentario.post_id ORDER BY comentario.post_id DESC;
 
+-- SELECT post.título, comentarios.texto
+-- FROM post
+-- FULL OUTER JOIN comentarios ON post.id = comentarios.post_id;
+--Requerimiento 8
+SELECT DISTINCT*
+FROM usuarios
+INNER JOIN post ON usuario.id =post.usuario_id
+WHERE post.fecha BETWEEN '2020-06-01' and '2020-06-30';
